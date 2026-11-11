@@ -332,16 +332,16 @@ body.is-locked { overflow: hidden; }
 /* =========================================================
    STATS — «О компании в цифрах»
    ========================================================= */
-.stats { padding: 76px 0 0; overflow: hidden; }
-.stats__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 1288px; margin: 40px auto 0; }
+.stats { padding: 92px 0 24px; overflow: hidden; }
+.stats__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 1320px; margin: 48px auto 0; }
 .stat { position: relative; isolation: isolate; padding: 0 16px; text-align: center; }
 .stat__num {
-  position: absolute; left: 50%; top: -46px; z-index: -1; margin-left: -124px; width: 248px;
-  font-family: "Arial Black", var(--font-black); font-weight: 900; font-size: 185px; line-height: 1; letter-spacing: -.02em;
-  color: #171717; opacity: .24; pointer-events: none; user-select: none;
+  position: absolute; left: 50%; top: -65px; z-index: -1; margin-left: -150px; width: 300px;
+  font-family: "Arial Black", Gadget, sans-serif; font-weight: 900; font-size: 220px; line-height: 1; letter-spacing: -.03em;
+  color: #171717; opacity: .38; pointer-events: none; user-select: none;
 }
 .stat:nth-child(2) .stat__num {
-  margin-left: -80px;
+  margin-left: -115px;
 }
 .stat__num span { display: block; }
 .stat__media { display: flex; align-items: flex-end; justify-content: center; height: 175px; }
@@ -633,10 +633,11 @@ body.is-locked { overflow: hidden; }
   .production__strip figure { width: 86vw; }
   .production { padding-bottom: 64px; }
   .watermark { top: 80px; }
-  .stats { padding-top: 64px; }
-  .stats__grid { column-gap: 8px; }
-  .stat__num { font-size: 130px; top: -24px; opacity: .24; }
-  .stat:nth-child(2) .stat__num { margin-left: -50px; }
+  .stats { padding-top: 72px; }
+  .stats__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 72px; column-gap: 20px; }
+  .stat { padding-top: 30px; }
+  .stat__num { font-size: 190px; top: -45px; width: 260px; margin-left: -130px; opacity: .38; }
+  .stat:nth-child(2) .stat__num { margin-left: -100px; }
   .stat__media { height: 140px; }
   .stat__media img { max-height: 130px; }
   .stat__title { font-size: 18px; white-space: normal; line-height: 1.3; }
@@ -657,7 +658,11 @@ body.is-locked { overflow: hidden; }
   .form__row { grid-template-columns: 1fr; gap: 4px; }
   .partners__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .partner { height: 112px; }
-  .stats__grid { grid-template-columns: 1fr; }
+  .stats { padding-top: 56px; padding-bottom: 24px; }
+  .stats__grid { grid-template-columns: 1fr; row-gap: 68px; margin-top: 36px; }
+  .stat { padding-top: 36px; }
+  .stat__num { font-size: 180px; top: -40px; width: 260px; margin-left: -130px; opacity: .38; }
+  .stat:nth-child(2) .stat__num { margin-left: -100px; }
   .contact__body { padding: 28px 20px 32px; }
   .contact__caption { left: 20px; right: 20px; bottom: 24px; }
   .btn { --h: 60px; min-width: 0; padding: 0 30px; font-size: 16px; }
