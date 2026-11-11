@@ -283,10 +283,6 @@ body.is-locked { overflow: hidden; }
 .hero__title .accent { color: var(--red-3); }
 .hero__sub { margin-top: 17px; font-size: 17px; line-height: 25px; color: #E1E2DB; }
 .hero__cta { margin-top: clamp(36px, 6.97vw, 131px); }
-.hero__scroll { position: absolute; left: 50%; bottom: 28px; display: grid; justify-items: center; gap: 10px; transform: translateX(-50%); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.6); }
-.hero__scroll i { position: relative; width: 1px; height: 46px; background: rgba(255,255,255,.2); overflow: hidden; }
-.hero__scroll i::after { content: ""; position: absolute; left: 0; top: -50%; width: 1px; height: 50%; background: #fff; animation: scrollLine 2s var(--ease-in-out) infinite; }
-@keyframes scrollLine { to { top: 110%; } }
 
 /* intro */
 .js .hero [data-intro] { opacity: 0; transform: translateY(24px); transition: opacity .9s var(--ease), transform 1.1s var(--ease); transition-delay: var(--d, 0s); }
@@ -630,7 +626,6 @@ body.is-locked { overflow: hidden; }
   .hero__inner { padding: 32px 0 96px; }
   .hero__title { margin-top: 40px; }
   .hero__cta { margin-top: 40px; }
-  .hero__scroll { display: none; }
   .bento { grid-template-columns: 1fr 1fr; gap: 12px; }
   .bento__card--tall { grid-row: auto; grid-column: 1 / -1; aspect-ratio: 305 / 250; }
   .bento__card--tall .bento__img { width: 100%; height: 100%; object-fit: cover; }
